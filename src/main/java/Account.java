@@ -1,5 +1,3 @@
-import static java.lang.System.*;
-
 public class Account {
 
     private final String name;
@@ -9,10 +7,7 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        /*
-             Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
-             Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
-         */
+
         if (name.length() < 3 || name.length() > 19) {
             System.out.println("Должно быть от 3 до 19 символов включительно!");
             return false;
